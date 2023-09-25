@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contanier">
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                <h1>Store</h1>
+            </div>
+
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+        
+        <div class="content">
+            <div class="div-text">
+                <span>outfit of the day</span>
+                <h3>all your</h3>
+                <h1>styles are here</h1>
+                <hr color="black">
+                <hr>
+                <hr>
+                <hr>
+                <hr color="black">
+                <p>Elevate your shopping experience with our e-commerce store, 
+                    <br> where quality and convenience converge </p>
+                    <a href="#" class="btn">buy now</a>
+            </div>
+
+            <div class="div-img">
+                <img id="big-img" src="jacket3.png" alt="">
+            </div>
+
+            <div class="small-img">
+                <img onclick="myTshirt(this.src)" src="jacket1.png" alt="">
+                <img onclick="myTshirt(this.src)" src="jacket2.png" alt="">
+                <img onclick="myTshirt(this.src)" src="jacket3.png" alt="">
+            </div>
+        </div>
+    </div>
+
+                              <!--Shop section-->
+
+     <section class="shop">
+        <h1>Shop <a href="#"><i class="fa-solid fa-cart-shopping"></i></a></h1>
+        <p>Everything is Present here</p>
+        
+
+        <div class="row">
+            <div class="shop-col">
+            <img src="clothes1.jpeg" alt="" height="350px" width="350px">
+            <div class="layer">
+                <h3>FEMALE</h3>
+            </div>
+            </div>
+            <div class="shop-col">
+            <img src="clothes3.jpeg" alt="" height="350px" width="350px">
+            <div class="layer">
+                <h3>MALE</h3>
+            </div>
+            </div>
+            
+            <div class="shop-col">
+            <img src="clothes4.jpeg" alt="" height="350px" width="350px">
+            <div class="layer">
+                <h3>CHILDREN</h3>
+            </div>
+            </div>
+            
+
+        </div>
+        <a href="#" class="btn">More Option</a>
+    </section >
+ 
+
+                 <!--contact-->
+    
+
+    <div class="contact"><h1>Contact Us</h1></div>
+    <section class="cta">
+        <h2>Contact Us From Anywhere </h2>
+        <a href="" class="btn">Contact Us</a>
+    </section>
+
+                <!--footer-->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo at, <br>explicabo porro ipsum blanditiis maiores iure vitae similique voluptatem perspiciatis magnam eveniet quas quod! Incidunt praesentium delectus voluptas cumque?</p>
+        <div class="icons">
+            <!-- Facebook -->
+          <i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i>
+
+            <!-- Twitter -->
+          <i class="fab fa-twitter fa-2x" style="color: #55acee;"></i>
+          <!-- Instagram -->
+          <i class="fab fa-instagram fa-2x" style="color: red;"></i>
+
+          <!-- Linkedin -->
+          <i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i>
+        </div>
+        <p> Connect with these social media platforms <i class="fa fa-heart" style="color: red;"></i></p>
+    </section>
+
+
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function myTshirt(shirt){
+            bigImage.src = shirt
+        }
+    </script>
+</body>
+</html>
